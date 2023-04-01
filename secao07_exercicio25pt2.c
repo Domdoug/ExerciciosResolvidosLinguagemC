@@ -27,7 +27,8 @@ Roteiro:
 #define LINHAS 3
 #define COLUNAS 3
 
-//Função delay para simular o computador pensando
+//Função delay para simular o computador pensando. 
+//Desativei, pois já no final o delay demora muito a encaixar na linha/coluna vazia
 /*
 void delay(double dly){
     // save start time 
@@ -43,6 +44,89 @@ void delay(double dly){
 }
 */
 
+//vetor: 1-linha / 2-coluna / 3-diagonal principal / 4-diagonal secundária
+//Jogador 1 (computador). Vermelho. Jogador 2 (eu). Verde
+int colorir(int array2[LINHAS][COLUNAS], int vetor, int jogador, int posicao)
+{
+    int i, j;
+    printf("\nResultado\n ");
+    switch (vetor)
+    {
+    case 1:
+        for ( i = 0; i < LINHAS; i++)
+        {
+            for (j = 0; j < COLUNAS; j++)
+            {
+                if (i == posicao)
+                {
+                    if (jogador == 1)
+                        printf("\t\033[42m\033[41m %d \033[0m", array2[i][j]);  //vermelho
+                    else
+                        printf("\t\033[44m\033[44m %d \033[0m", array2[i][j]);  //azul
+                }
+                else
+                    printf("\t %d", array2[i][j]);
+            }
+            printf("\n");
+        }
+        break;
+    case 2:
+        for ( i = 0; i < LINHAS; i++)
+        {
+            for (j = 0; j < COLUNAS; j++)
+            {
+                if (j == posicao)
+                {
+                    if (jogador == 1)
+                        printf("\t\033[42m\033[41m %d \033[0m", array2[i][j]);  //vermelho
+                    else
+                        printf("\t\033[44m\033[44m %d \033[0m", array2[i][j]);  //azul
+                }
+                else
+                    printf("\t %d", array2[i][j]);
+            }
+            printf("\n");
+        }
+        break;
+    case 3:
+        for ( i = 0; i < LINHAS; i++)
+        {
+            for (j = 0; j < COLUNAS; j++)
+            {
+                if (i == j)
+                {
+                    if (jogador == 1)
+                        printf("\t\033[42m\033[41m %d \033[0m", array2[i][j]);  //vermelho
+                    else
+                        printf("\t\033[44m\033[44m %d \033[0m", array2[i][j]);  //azul
+                }                
+                else
+                    printf("\t %d", array2[i][j]);
+            }
+            printf("\n");
+        }
+        break;
+    case 4:
+        for ( i = 0; i < LINHAS; i++)
+        {
+            for (j = 0; j < COLUNAS; j++)
+            {
+                if (j == LINHAS - 1 - i) //LINHAS - 1 - i
+                {
+                    if (jogador == 1)
+                        printf("\t\033[42m\033[41m %d \033[0m", array2[i][j]);  //vermelho
+                    else
+                        printf("\t\033[44m\033[44m %d \033[0m", array2[i][j]);  //azul
+                }
+                else
+                    printf("\t %d", array2[i][j]);
+            }
+            printf("\n");
+        }            
+    }
+    return 0;
+}
+
 int confere(int array[LINHAS][COLUNAS])
 {
     int i, j;
@@ -56,11 +140,14 @@ int confere(int array[LINHAS][COLUNAS])
        
         if (somaLin == 3)
         {
+            //Função colorir
+            colorir(array, 1, 1, i);     //colorir a linha (1) na cor vermelho (computador=1)
             return 1; //computador
             exit(0);
         }
         else if (somaLin == -3)
         {
+            colorir(array, 1, 2, i);     //colorir a linha (1) na cor verde (eu=2)
             return 2;   //eu      
             exit(0);
         }
@@ -74,11 +161,15 @@ int confere(int array[LINHAS][COLUNAS])
        
         if (somaCol == 3)
         {
+            //Função colorir
+            colorir(array, 2, 1, j);     //colorir a coluna (2) na cor vermelho (computador=1)
+            
             return 1; //computador
             exit(0);
         }
         else if (somaCol == -3)
         {
+            colorir(array, 2, 2, j);     //colorir a coluna (2) na cor vermelho (eu=2)
             return 2;   //eu      
             exit(0);
         }
@@ -91,35 +182,38 @@ int confere(int array[LINHAS][COLUNAS])
        
     if (somaDiagPrin == 3)
     {
+        //Função colorir
+        colorir(array, 3, 1, i);     //colorir a diagonal (3) na cor vermelho (computador=1)
         return 1; //computador
         exit(0);
     }
     else if (somaDiagPrin == -3)
     {
+        colorir(array, 3, 2, i);     //colorir a diagonal principal (3) na cor vermelho (eu=2)
         return 2;   //eu      
         exit(0);
     }
 
     //checar na diagonal secundária
     for (i = 0; i < LINHAS; i++)
-    {
-        for (j = COLUNAS; j > 0; j--)
-            somaDiagSec += array[i][j]; 
+        somaDiagSec += array[i][LINHAS - 1 - i]; 
        
-        if (somaDiagSec == 3)
-        {
-            return 1; //computador
-            exit(0);
-        }
-        else if (somaDiagSec == -3)
-        {
-            return 2;   //eu      
-            exit(0);
-        }
+    if (somaDiagSec == 3)
+    {
+        //Função colorir
+        colorir(array, 4, 1, i);     //colorir a diagonal secundária (4) na cor vermelho (computador=1)
+        return 1; //computador
+        exit(0);
+    }
+    else if (somaDiagSec == -3)
+    {
+        colorir(array, 4, 2, i);     //colorir a diagonal secundária (4) na cor vermelho (eu=2)
+        return 2;   //eu      
+        exit(0);
     }
 
+    return 0;
 }
-
 
 
 int main()
@@ -129,7 +223,8 @@ int main()
                                 {4,5,6},
                                 {7,8,9}
     };
-    int i, j, k;
+
+    int i, j;
     int computador, eu;
     int opcao;
     char vazio='S';
@@ -164,7 +259,7 @@ int main()
     }
 
     
-    printf("\nDigite quem inicia o jogo, 1 para você, 2 para o computador ou zero para sair: ");
+    printf("\nDigite quem inicia o jogo, 1 para computador, 2 para você ou zero para sair: ");
     scanf("%d", &opcao);
 
     //Implementar o 0 para sair
@@ -183,11 +278,10 @@ int main()
 
     while (cont < limSup)
     {
-        if (opcao==1)
+        if (opcao==2)
         {
             //Depois do computador escolher, agora é sua vez
             //EU
-            
             do
             {
                 printf("\nAgora é sua vez! ");
@@ -264,7 +358,7 @@ int main()
             } while (vazio=='S');            
             
             //Alterna quem iniciou para entrar na condicional do outro jogador
-            opcao = 2;
+            opcao = 1;
             vazio = 'S';  //para quando voltar ao loop, enquanto não entrar em uma casa vazia: loop
             
             //Atualizar a matriz a cada jogada
@@ -282,12 +376,12 @@ int main()
             resultado = confere(matriz);
             if (resultado == 1)
             {
-                printf("\nO computador venceu!!\n");
+                printf("\n\033[42m\033[41m %s \033[0m %s", "O computador" ,"venceu!!\n");   //vermelho
                 exit(0);
             }
             if (resultado == 2)
             {
-                printf("\nVocê venceu!!\n");
+                printf("\n\033[44m\033[44m %s \033[0m %s\n", "Você", "venceu!!");   //em azul
                 exit(0);
             }
 
@@ -372,7 +466,7 @@ int main()
             } while (vazio=='S');            
             
             //Alterna quem joga agora
-            opcao = 1;
+            opcao = 2;
             vazio = 'S';
 
             //Atualizar a matriz a cada jogada
@@ -385,15 +479,22 @@ int main()
             }
         }
 
-        // Chamada para função conferir. VER INSTRUÇÃO NA PARTE DO EU.
-
+            // Chamada para função conferir na vez do computador.
+            //Conferencia se venceu
+            resultado = confere(matriz);
+            if (resultado == 1)
+            {
+                printf("\n\033[42m\033[41m %s \033[0m %s", "O computador" ,"venceu!!\n");   //vermelho
+                exit(0);
+            }
+            if (resultado == 2)
+            {
+                printf("\n\033[44m\033[44m %s \033[0m %s\n", "Você", "venceu!!");   //em azul
+                exit(0);
+            }
 
         cont++;
     }
-        
-   
-    //Finalizar com o print de quem venceu
-
 
     return 0;
 }
