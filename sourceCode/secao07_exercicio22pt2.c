@@ -69,7 +69,7 @@ int main()
         }
 
     }
-    printf("\nt Matriz C resultante AxB:\n");
+    printf("\n\t Matriz C resultante AxB:\n");
     for (i = 0; i < linhas; i++)
     {
         for (j = 0; j < colunas; j++)

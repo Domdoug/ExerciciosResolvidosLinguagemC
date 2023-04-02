@@ -7,12 +7,15 @@ Mais de 300 exercícios resolvidos.
 
 ## **Seção 3**
 
-Seção03_exercicio01:
+1. Seção03_exercicio01:
 ```sh
 Faça um programa que leia um número inteiro e o imprima
 ```
+
+2. Seção03_exercicio02:
+```sh
 Faça um programa que leia um número inteiro e o imprima
-1. Seção03_exercicio02:
+```
 
 
 ## **Seção 4**
