@@ -14,9 +14,14 @@ Faça um programa que leia um número inteiro e o imprima
 
 2. Seção03_exercicio02:
 ```sh
-Faça um programa que leia um número inteiro e o imprima
+Faça um programa que leia um número real e o imprima
 ```
 
+3. Seção03_exercicio03:
+```sh
+Faça um programa que leia um número real e o imprima $(ax^2 + bx + c = 0)$ 
+```
+$(ax^2 + bx + c = 0)$
 
 ## **Seção 4**
 
