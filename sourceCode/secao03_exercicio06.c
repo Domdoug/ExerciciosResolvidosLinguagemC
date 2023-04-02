@@ -1,5 +1,6 @@
-// Leia uma temperatura em graus Celsius e apresente-a convertida em graus
-//Fahrenheit. A fÃ³rmula de conversÃ£o Ã©: F = C*(9.0/5.0) + 32.0
+/* Leia uma temperatura em graus Celsius e apresente-a convertida em graus
+Fahrenheit. A fórmula de conversão é: F = C*(9.0/5.0) + 32.0
+*/
 #include <stdio.h>
 
 int main(){
@@ -7,7 +8,7 @@ int main(){
 	printf("Digite a temperatura em graus Celsius ");
 	scanf("%f", &celsius);
 
-	//fÃ³rmula de conversÃ£o de graus Celsius para Fahrenheit
+	//fórmula de conversão de graus Celsius para Fahrenheit
 	fahrenheit = celsius*(9.0/5.0)+32;
 
 	printf("A temperatura corresponde a %.2f graus Fahrenheit ", fahrenheit);

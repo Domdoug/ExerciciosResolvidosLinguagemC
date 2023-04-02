@@ -1,14 +1,14 @@
-//Leia um nÃºmero real e imprima o resultado do quadrado desse nÃºmero
+//Leia um número real e imprima o resultado do quadrado desse número
 #include <stdio.h>
 
 int main(){
 	float numero, quadrado;
 
-	printf("Digite um nÃºmero real ");
+	printf("Digite um número real ");
 	scanf("%f", &numero);
 	//operaÃ§Ã£o
 	quadrado = numero * numero;
-	printf("O quadrado do nÃºmero %f Ã© ", quadrado);
+	printf("O quadrado do número %f é ", quadrado);
 	return 0;
 
 }

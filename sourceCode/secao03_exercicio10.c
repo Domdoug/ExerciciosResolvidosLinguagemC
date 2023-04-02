@@ -1,5 +1,5 @@
 // Leia uma velocidade em km/h e apresente-a convertida em m/s.
-//A f√≥rmula de convers√£o √©: M = K/3.6, sendo K a velocidade em km/h
+//A fÛrmula de convers„o È: M = K/3.6, sendo K a velocidade em km/h
 // e M em m/s
 #include <stdio.h>
 
@@ -8,7 +8,7 @@ int main(){
 	printf("Digite a velocidade em km/h ");
 	scanf("%f", &K);
 
-	//f√≥rmula de convers√£o de km/h para m/s
+	//fÛrmula de convers„o de km/h para m/s
 	 M = K/3.6;
 
 	printf("A velocidade corresponde √† %.2f m/s ", M);

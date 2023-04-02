@@ -1,15 +1,15 @@
-// Leia um valor de comprimento em cent√≠metros e apresente-o convertido em polegadas.
-// A f√≥rmula de convers√£o √©: P = C/2.54, sendo C o comprimento em cent√≠metros
+// Leia um valor de comprimento em centÌ≠metros e apresente-o convertido em polegadas.
+// A fÛrmula de convers„o È: P = C/2.54, sendo C o comprimento em centÌmetros
 // e P em polegadas.
 #include <stdio.h>
 
 int main(){
 	float P, C;
-	printf("Digite o comprimento em cent√≠metros ");
+	printf("Digite o comprimento em centÌ≠metros ");
 	scanf("%f", &C);
 
 	P = C/2.54;
 
-	printf("O comprimento em cent√≠metros √© %.2f ", P);
+	printf("O comprimento em centÌmetros È %.2f ", P);
 	return 0;
 }

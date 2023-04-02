@@ -1,5 +1,5 @@
 // Leia uma temperatura em graus Kelvin e apresente-a convertida em graus
-//Celsius. A f√≥rmula de convers√£o √©: C = K - 273.15
+//Celsius. A fÛrmula de convers„o È: C = K - 273.15
 #include <stdio.h>
 
 int main(){
@@ -7,7 +7,7 @@ int main(){
 	printf("Digite a temperatura em graus Kelvin ");
 	scanf("%f", &kelvin);
 
-	//f√≥rmula de convers√£o de graus Celsius para Kelvin
+	//fÛrmula de convers„o de graus Celsius para Kelvin
 	celsius = kelvin-273.15;
 
 	printf("A temperatura corresponde a %.2f graus Celsius ", celsius);

@@ -1,13 +1,13 @@
-//Leia um nÃºmero real e imprima a quinta parte deste nÃºmero
+//Leia um número real e imprima a quinta parte deste número
 
 #include <stdio.h>
 
 int main(){
 	float numero, resultado;
-	printf("Digite um nÃºmero real ");
+	printf("Digite um número real ");
 	scanf("%f", &numero);
 
 	resultado = numero/5;
-	printf("A quinta parte do nÃºmero %f Ã©", resultado);
+	printf("A quinta parte do número %f é", resultado);
 	return 0;
 }

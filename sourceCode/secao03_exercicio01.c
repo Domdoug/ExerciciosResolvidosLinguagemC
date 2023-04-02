@@ -1,26 +1,26 @@
-//Fa√ßa um programa que leia um n√∫mero inteiro e o imprima
+//FaÁa um programa que leia um n˙mero inteiro e o imprima
 #include <stdio.h>
 
-int main(){  //a chave delimita um bloco de c√≥digo
-	//declara√ß√£o de vari√°veis
+int main(){  //a chave delimita um bloco de cÛdigo
+	//declaraÁ„o de vari·veis
 	int idade;  //inteiro
 
-	//declara√ß√£o e inicializa√ß√£o de vari√°veis
+	//declaraÁ„o e inicializaÁ„o de vari·veis
 	//int idade=0;
 
-	//Fun√ß√£o para escrever algo na sa√≠da padr√£o (console)
-	//printf("Geek University!");
-	printf("Qual √© a sua idade? "); //o ponto e virgula finaliza um comando
+	//FunÁ„oo para escrever algo na saÌ≠da padr„o (console)
+	
+	printf("Qual È a sua idade? "); //o ponto e virgula finaliza um comando
 	//Esta instru√ß√£o √© para corrigir um problema quando se executa no windows.
 	//A idade vem antes da pergunta. No linux n√£o precisa utilizar.
 	//Em resumo, a fun√ß√£o fflush √© para limpar a sa√≠da do console para fazer com que o printf funcione
 	//fflush(stdout);
 
 	//receber dados do teclado
-	scanf("%d", &idade);  //%d informa que vai receber uma vari√°vel do tipo inteiro
+	scanf("%d", &idade);  //%d informa que vai receber uma vari·vel do tipo inteiro
 
 	//Sa√≠da
-	printf("A sua idade √© %d", idade);
+	printf("A sua idade È %d", idade);
 	return 0;
 
 } //fim do bloco

@@ -1,5 +1,5 @@
-// Leia um valor de comprimento em polegadas e apresente-o convertido em cent√≠metros.
-// A f√≥rmula de convers√£o √©: C = P*2.54, sendo C o comprimento em cent√≠metros
+// Leia um valor de comprimento em polegadas e apresente-o convertido em centÌmetros.
+// A fÛrmula de convers„o È: C = P*2.54, sendo C o comprimento em centÌ≠metros
 // e P em polegadas.
 #include <stdio.h>
 
@@ -10,6 +10,6 @@ int main(){
 
 	C = P*2.54;
 
-	printf("O comprimento em cent√≠metros √© %.2f ", C);
+	printf("O comprimento em centÌmetros È %.2f ", C);
 	return 0;
 }

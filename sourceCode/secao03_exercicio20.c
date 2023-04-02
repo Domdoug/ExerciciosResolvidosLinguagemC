@@ -1,5 +1,5 @@
 // Leia um valor de massa em quilogramas e apresente-o convertido em libras.
-// A f√≥rmula de convers√£o √©: L = K/0.45, sendo K a massa em quilogramas
+// A fÛrmula de convers„o È: L = K/0.45, sendo K a massa em quilogramas
 // e L a massa em libras.
 
 #include <stdio.h>
@@ -11,6 +11,6 @@ int main(){
 
 	L = K/0.45;
 
-	printf("A massa em libras √© %.2f ", L);
+	printf("A massa em libras È %.2f ", L);
 	return 0;
 }
