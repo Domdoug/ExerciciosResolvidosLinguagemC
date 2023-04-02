@@ -14,8 +14,8 @@ Implementar correções:
 int main(){
     setlocale(LC_ALL, ""); 
 
-    int tot_cartao=60; //para o tipo de cartão: 60: para megasena. 80 para quina. 25 para lotofacil. duplasena = 50
-    int num_escolhidos=6; //total de apostas por cartão: minimos: 6 para megasena. 5 para quina. 15 para lotofácil.  duplasena = 6
+    int tot_cartao=25; //para o tipo de cartão: 60: para megasena. 80 para quina. 25 para lotofacil. duplasena = 50
+    int num_escolhidos=15; //total de apostas por cartão: minimos: 6 para megasena. 5 para quina. 15 para lotofácil.  duplasena = 6
     int jogo[N][num_escolhidos], jogo1[N][num_escolhidos], i, j, k, aux;
     char ja_consta;
     
