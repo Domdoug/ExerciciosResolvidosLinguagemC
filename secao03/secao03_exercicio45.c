@@ -1,8 +1,9 @@
-/* FaÃ§a um programa para converter uma letra maiÃºscula em
-letra minÃºscula. Use a tabela ASCII para resolver o problema.
+/* 
+Faça um programa para converter uma letra maiúscula em
+letra minúscula. Use a tabela ASCII para resolver o problema.
 'a' = ASCII 97
 'A' = ASCII 65
-DiferenÃ§a = 97-65 = 32
+Diferença = 97-65 = 32
 subtraia 32 ( decimal ) do char da letra que voce tem.
 */
 
@@ -22,7 +23,7 @@ int main()
     scanf("%c", &letra); // %c transforma a letra em um numero correspondente na tabela ascii
     printf("\n");
 
-    //cÃ¡lculo
+    //cálculo
     letra = letra + 32;
 
     printf("Convertendo para minuscula : %c\n", letra); // %c formata para char

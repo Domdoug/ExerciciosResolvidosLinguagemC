@@ -16,11 +16,14 @@ Tabela Resumo sobre os exercícios:
 |  04     |  aritmética |  41   | [Secao04](Secao04.md)         |
 |  05     |  séries     |  62   | [Secao05](Secao05.md)         |
 |  07 pt1 |  arrays     |  39   | [Secao07 pt1](Secao07_pt1.md) |
-|  07 pt2 |  matrizes   |  25   | [Secao07 pt1](Secao07_pt2.md) |
+|  07 pt2 |  matrizes   |  25   | [Secao07 pt2](Secao07_pt2.md) |
+|  09     |  funções    |  73   | [Secao09](Secao09.md)         |
+|  10 pt1 |  ponteiros  |  26   | [Secao10 pt1](Secao10_pt1.md) |
+|  10 pt2 |  ponteiros  |  06   | [Secao10 pt2](Secao10_pt2.md) |
 
 
 
-## Meta
+## Contato
 
 José Douglas Nascimento <kbd>Return</kbd>  domdoug2012@gmail.com
 

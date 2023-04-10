@@ -64,7 +64,7 @@ Celsius. A fórmula de conversão é: $C = {5.0\over9.0}*(F-32.0)$
 
 **15. Seção03_exercicio15**
 
->Leia um ângulo em radiano e apresente-o convertido em graus. A fórmula de conversão é: $G = R*{180\over\pi}$, sendo G o ângulo em graus e R em radianos. pi = 3.14.
+>Leia um ângulo em radiano e apresente-o convertido em graus. A fórmula de conversão é: $G = R*{180\over\pi}$, sendo G o ângulo em graus e R em radianos. $\pi = 3.14$.
 
 **16. Seção03_exercicio16**
 
@@ -109,6 +109,14 @@ Celsius. A fórmula de conversão é: $C = {5.0\over9.0}*(F-32.0)$
 **31. Seção03_exercicio31**
 
 **32. Seção03_exercicio32**
+
+**45. Seção03_exercicio45**
+>Faça um programa para converter uma letra maiúscula em
+letra minúscula. Use a tabela ASCII para resolver o problema.
+><p>'a' = ASCII 97</p>
+><p>'A' = ASCII 65</p>
+>Diferença = 97-65 = 32
+>subtraia 32 ( decimal ) do char da letra que voce tem.
 
 
 

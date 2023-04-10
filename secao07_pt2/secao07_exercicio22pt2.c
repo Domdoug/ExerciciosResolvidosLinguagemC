@@ -1,7 +1,5 @@
 // Faça um programa que leia duas matrizes A e B de tamanho 3 x 3 e calcule C= A * B
 
-// Faça um programa que leia uma matriz A de tamanho 3x3 e calcule B = A^2
-
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>

@@ -1,9 +1,5 @@
-//Leia uma matriiz de 3 x 3 elementos. Calcule e imprima a sua transposta.
+//Leia uma matriz de 3 x 3 elementos. Calcule e imprima a sua transposta.
 
-/*
-Leia uma matriz de 3 x 3 elementos. Calcule a soma dos elementos que estão na
-diagonal secundária.
-*/
 
 #include <stdio.h>
 #include <time.h>   //para função time()

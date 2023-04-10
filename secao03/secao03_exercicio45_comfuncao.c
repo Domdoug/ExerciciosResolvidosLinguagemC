@@ -1,16 +1,18 @@
-// FaÃ§a um programa para converter uma letra maiÃºscula em
-// letra minÃºscula. Use a tabela ASCII para resolver o problema.
+// Faça um programa para converter uma letra maiúscula em
+// letra minúscula. Use a tabela ASCII para resolver o problema.
 
-/* Convertendo uma string em maiÃºsculas * usando a funÃ§Ã£o strupr() */
+/* Convertendo uma string em maiúsculas * usando a função strupr() */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <locale.h>
  
 int main()
 {
+    setlocale(LC_ALL, "");
     char string[20];
     printf("\n");
-    printf("Convertendo uma string para maiÃºsculas\n");
+    printf("Convertendo uma string para maiúsculas\n");
     printf("------------------------------------\n");
     printf("\n");
     printf("Entre com a string :");
@@ -18,7 +20,7 @@ int main()
     printf("\n");
     printf("string digitada : %s\n",string);
     printf("\n");
-    printf("Convertendo para maiÃºsculas : %s\n",strupr(string));
+    printf("Convertendo para maiúsculas : %s\n",strupr(string));
     system("pause"); //se quiser a mensagem de "pressione qualquer tecla para continuar..."
     return(0);
 }
